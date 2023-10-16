@@ -32,13 +32,19 @@ body{
     justify-content: center;
 }
 
+@font-face {
+    font-family: "CustomFont";
+    src: url(./Norse-Bold.otf) format("opentype");
+}
+
 
 .box p{
     color: white;
     font-size: 150px;
     margin: 0;
+    font-family: CustomFont;
+    }
 
-}
 
 .odin-image{
     width: 110px;
@@ -57,22 +63,34 @@ body{
 
 .information{
     grid-row: 1/2;
-    background-color: black;
+    background-color: #f3f4f6;
+    display: flex;
 }
 
 
 .real-information{
-    display: block;
-    padding: 115px 0px 0 50px;
+    align-self: flex-end;
+    margin-left: 50px;
+    margin-bottom: 35px;
     width: 550px;
     text-align: left;
-    color: white;
+    color: black;
+}
+
+
+.real-information p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.real-information p:nth-child(2){
+    font-style: italic;
 }
 
 
 .form{
     grid-row: 2/3;
-    background-color: pink;
+    background-color: #f9fafb;
     }
 
 .form h1{
@@ -107,11 +125,17 @@ label, input{
 }
 
 
+input:focus{
+    background-color: #67e8f9;
+}
+
+
 
 .sign-up{
 grid-row: 3/4;
 display: flex;
 flex: 1 1 200px;
+background-color: #f3f4f6;
 }
 
 
@@ -120,18 +144,24 @@ flex: 1 1 200px;
     width: 200px;
     padding: 10px 50px;
     margin: 35px 0px 25px 50px;
+    border: none;
     border-radius: 5px;
+    background-color: #d9f99d;
+    font-weight: bold;
+
 }
 
 .sign-up p{
     margin-left: 50px;
-    color: white;
+    color: black;
+    font-size: 18px;
 }
 
 
 .sign-up p a{
-    color: black;
+    color: #7c2d12;
     text-decoration: none;
+    font-size: 18px;
 }
 
 
